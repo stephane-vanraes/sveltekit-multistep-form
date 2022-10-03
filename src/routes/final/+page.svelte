@@ -7,8 +7,8 @@
 
 <style>
 	div {
-		background-color: #eee;
-		border: 4px solid var(--primary);
+		background-color: var(--primary);
+		color: white;
 		display: grid;
 		font-size: 4rem;
 		height: 20rem;

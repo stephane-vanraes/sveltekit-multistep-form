@@ -6,7 +6,8 @@
 	<nav>
 		<h1>Demo Page</h1>
 		<a href="/">Home</a>
-		<a href="#">Github</a>
+		<a href="https://github.com/stephane-vanraes/sveltekit-multistep-form" target="_blank">Github</a
+		>
 	</nav>
 </header>
 <main>

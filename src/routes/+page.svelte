@@ -33,6 +33,14 @@
 	}
 </script>
 
+<div class="top">
+	This site demos a possible way to make mulistep forms with SvelteKit. It uses form actions to
+	progressively enhance the form. With JavaScript enabled you will see no network requests until the
+	very last one. But with JavaScript disabled a form request is made at each step building up a
+	series of hidden inputs in order to keep track of the data. This ensure that users without
+	JavaScript can still use the form like normal (but with extra requests).
+</div>
+
 <form method="POST" use:enhance={handleEnhance}>
 	<Input hidden={form_step != 1} label="Name" name="name" value={form_so_far.name} />
 	{#each Object.entries(form_so_far.items) as [key, value], i}
@@ -69,6 +77,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		padding: 1rem;
+	}
+
+	.top {
+		background-color: var(--primary);
+		color: white;
 		padding: 1rem;
 	}
 </style>
